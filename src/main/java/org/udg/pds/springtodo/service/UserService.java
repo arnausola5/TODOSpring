@@ -59,7 +59,7 @@ public class UserService {
     if (uo.isPresent())
       return uo.get();
     else
-      throw new ServiceException(String.format("User with id = % dos not exists", id));
+      throw new ServiceException(String.format("User with id = % does not exists", id));
   }
 
   public User getUserProfile(long id) {
